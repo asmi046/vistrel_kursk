@@ -41,9 +41,9 @@ function my_assets()
 
 add_action( 'after_setup_theme', function(){
 	register_nav_menus( [
-		'menu-1' => 'Меню Товары',
-		'menu-2' => 'Меню Сотрудничество',
-		'menu-3' => 'Меню Доставка',
+		'main_menu' => 'Главное меню',
+		'mobile_menu' => 'Мобильное меню',
+		'footer_menu' => 'Подвал меню',
 	] );
 } ); 
 

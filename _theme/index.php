@@ -1,11 +1,10 @@
 <?php get_header(); ?>
-<section>
-    <div class="_container">
-        <h1>ЧУ ДПО «УЦ Выстрел-Курск»</h1>
-        <p>305038 г.Курск ул.К.Воробьева зд.2Д</p>
-        <p>ИНН: 4632295081</p>
-        <p>ОГРН: 1234600000865</p>
-        <p>Сайт находится в разработке, по всем вопросам обращайтесь: <br/> <a href="mailto:vistrelcentr46@yandex.ru">vistrelcentr46@yandex.ru</a></p>
-    </div>
-</section>
+
+<main class="page">
+    <?php get_template_part('template-parts/banner');?>
+    <?php get_template_part('template-parts/about-in-main');?>
+    <?php get_template_part('template-parts/services');?>
+    <?php get_template_part('template-parts/general-provisions');?>
+</main>
+
 <?php get_footer(); ?>
