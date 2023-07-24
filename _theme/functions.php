@@ -19,12 +19,15 @@ function my_assets()
 
 	wp_enqueue_style("null-css", get_template_directory_uri() . "/css/null.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("fonts-css", get_template_directory_uri() . "/css/fonts.css", array(), $style_version, 'all'); 
+	wp_enqueue_style("verstka-css", get_template_directory_uri() . "/css/style.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("main-css", get_template_directory_uri() . "/css/main.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("main-style", get_stylesheet_uri(), array(), $style_version, 'all');
 
 	// Подключение скриптов
 
 	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), $scrypt_version, true);
+	wp_enqueue_script('vendor', get_template_directory_uri() . '/js/vendors.min.js', array(), $scrypt_version, true);
+	wp_enqueue_script('app', get_template_directory_uri() . '/js/app.min.js', array(), $scrypt_version, true);
 
 
 	wp_localize_script('main', 'allAjax', array(

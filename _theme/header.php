@@ -17,90 +17,17 @@
 </head>
     <body>
     <div class="wrapper">
-		<header id="header" class="header">
-	<div class="header__container _container">
 
-		<div class="header__row d-flex">
+	<?php get_template_part('template-parts/menu-head');?>
+	<?php get_template_part('template-parts/mobile-menu');?>
 
-			<a href="index.html" class="header__logo logo-icon">
-				<svg>
-					<use xlink:href="#logo"></use>
-				</svg>
-				<!-- <? bloginfo("url"); ?> -->
-			</a>
 
-			<ul class="header__menu-list menu-list d-flex">
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Сведения об образовательной организации</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Нормативные правовые акты</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Услуги</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Реквизиты</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
-			</ul>
-			<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
-						'container_class' => 'menu__list','container' => false )); ?>  -->
-
-			<button type="button" class="header__icon-menu icon-menu" aria-label="Иконка бургера">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-
-		</div>
-
-	</div>
-</header>
-
-<!-- Мобильное меню -->
-<div class="header__mob-menu mob-menu">
-	<ul class="mob-menu__list">
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Сведения об образовательной организации</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Нормативные правовые акты</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Услуги</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Реквизиты</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакты</a></li>
-	</ul>
-	<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
-		'container_class' => 'mob-menu__list','container' => false )); ?>  -->
-	<!-- <a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> -->
-</div>
 		<main class="page">
 
-			<section class="main-banner section">
-				<div class="nuar_blk"></div>
-				<div class="_container">
+			<?php get_template_part('template-parts/banner');?>
+			<?php get_template_part('template-parts/about-in-main');?>
 
-					<div class="main-banner__descp">
-						<h2 class="main-banner__title">
-							ОБРАЗОВАТЕЛЬНЫЙ <br>
-							ЦЕНТР <br>
-							ВЫСТРЕЛ КУРСК
-						</h2>
-						<p class="main-banner__subtitle">
-							Подготовка сотрудников ЧОП <br>
-							и охранных организаций
-						</p>
-					</div>
 
-					<div class="main-banner__img">
-						<div class="main-banner__img-circle">
-							<picture><source srcset="img/main-img.webp" type="image/webp"><img src="img/main-img.jpg?_v=1689970479121" alt="Картинка блока"></picture>
-						</div>
-					</div>
-
-				</div>
-			</section>
-
-			<section class="about section">
-				<div class="_container">
-
-					<h2 class="about__title title">О НАС</h2>
-					<p class="about__subtitle">
-						ЧУ ДПО «Учебный центр «Выстрел-Курск» оказывает услуги по подготовки квалифицированных кадров для работы в
-						структурах безопасности, а также обучение граждан РФ безопасному обращению с оружием и навыков владения им.
-					</p>
-
-				</div>
-			</section>
 
 			<section class="services section">
 				<div class="_container">
@@ -111,8 +38,11 @@
 
 						<div class="services__column">
 							<a href="#" class="services__card">
-								<div class="services__card-img _ibg">
-									<picture><source srcset="img/services/01.webp" type="image/webp"><img src="img/services/01.jpg?_v=1689970479121" alt="Картинка карточки"></picture>
+								<div class="services__card-img _ibg" type="image/webp">
+									<picture>
+										<source srcset="<?php echo get_template_directory_uri();?>/img/services/01.webp" type="image/webp">
+										<img src="<?php echo get_template_directory_uri();?>/img/services/01.jpg" alt="Картинка карточки">
+									</picture>
 								</div>
 								<div class="services__card-body">
 									<h4 class="services__card-title">
@@ -125,8 +55,11 @@
 
 						<div class="services__column">
 							<a href="#" class="services__card">
-								<div class="services__card-img _ibg">
-									<picture><source srcset="img/services/02.webp" type="image/webp"><img src="img/services/02.jpg?_v=1689970479121" alt="Картинка карточки"></picture>
+								<div class="services__card-img _ibg" type="image/webp">
+									<picture>
+										<source srcset="<?php echo get_template_directory_uri();?>/img/services/02.webp" type="image/webp">
+										<img src="<?php echo get_template_directory_uri();?>/img/services/02.jpg" alt="Картинка карточки">
+									</picture>
 								</div>
 								<div class="services__card-body">
 									<h4 class="services__card-title">
@@ -139,8 +72,11 @@
 
 						<div class="services__column">
 							<a href="#" class="services__card">
-								<div class="services__card-img _ibg">
-									<picture><source srcset="img/services/03.webp" type="image/webp"><img src="img/services/03.jpg?_v=1689970479121" alt="Картинка карточки"></picture>
+								<div class="services__card-img _ibg" type="image/webp">
+									<picture>
+										<source srcset="<?php echo get_template_directory_uri();?>/img/services/03.webp" type="image/webp">
+										<img src="<?php echo get_template_directory_uri();?>/img/services/03.jpg" alt="Картинка карточки">
+									</picture>
 								</div>
 								<div class="services__card-body">
 									<h4 class="services__card-title">
@@ -153,8 +89,11 @@
 
 						<div class="services__column">
 							<a href="#" class="services__card">
-								<div class="services__card-img _ibg">
-									<picture><source srcset="img/services/04.webp" type="image/webp"><img src="img/services/04.jpg?_v=1689970479121" alt="Картинка карточки"></picture>
+								<div class="services__card-img _ibg" type="image/webp">
+									<picture>
+										<source srcset="<?php echo get_template_directory_uri();?>/img/services/04.webp" type="image/webp">
+										<img src="<?php echo get_template_directory_uri();?>/img/services/04.jpg" alt="Картинка карточки">
+									</picture>
 								</div>
 								<div class="services__card-body">
 									<h4 class="services__card-title">
@@ -218,7 +157,10 @@
 
 					<div class="contacts-sec__box">
 						<div class="contacts-sec__nuar">
-							<picture><source srcset="img/contacts-nuar.webp" type="image/webp"><img src="img/contacts-nuar.png?_v=1689970479121" alt="Затемнение"></picture>
+							<picture>
+								<source srcset="<?php echo get_template_directory_uri();?>/img/contacts-nuar.webp" type="image/webp">
+								<img src="<?php echo get_template_directory_uri();?>/img/contacts-nuar.png?_v=1689970479121" alt="Затемнение">
+							</picture>
 						</div>
 						<div class="contacts-sec__descp">
 							<h2 class="contacts-sec__title">Контакты</h2>
@@ -243,10 +185,8 @@
 
 						<form action="#" class="contacts-sec__form">
 							<div class="form__line">
-								<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
-									data-value="Имя" class="input _req">
-								<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
-									data-value="Телефон" class="input _phone _req">
+								<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя" class="input _req">
+								<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон" class="input _phone _req">
 								<button class="form__btn btn">Отправить</button>
 							</div>
 							<p class="contacts-sec__form-policy">* Отправляя заявку, вы соглашаетесь на обработку
@@ -346,8 +286,8 @@
 		<div class="popup__body">
 			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
 			<div class="popup__item d-flex">
-				<div class="popup__img">
-					<picture><source srcset="img/popup.webp" type="image/webp"><img src="img/popup.jpg?_v=1689970479121" alt=""></picture>
+				<div c="img/popup.webp" type="image/webp"><img s/lass="popup__img">
+					<picture><source srcset="img/popup.webp" type="image/webp"><img src="img/popup.jpg" alt=""></picture>
 				</div>
 				<div class="popup__form-block">
 					<h2>Заказать звонок</h2>
