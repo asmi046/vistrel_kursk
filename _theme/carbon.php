@@ -7,18 +7,25 @@ add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 function crb_attach_theme_options() {
     Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
     ->add_tab('Общие настройки', array(
-            Field::make( 'text', 'company', 'Компания' )->set_width(100),
+            Field::make( 'text', 'phone', 'Телефон' )->set_width(100),
+            Field::make( 'text', 'adress_ur', 'Юридический адрес' )->set_width(100),
+            Field::make( 'text', 'adress', 'Фактический адрес' )->set_width(100),
             Field::make( 'text', 'inn', 'ИНН' )->set_width(100),
+            Field::make( 'text', 'kpp', 'КПП' )->set_width(100),
+            Field::make( 'text', 'oktmo', 'ОКТМО' )->set_width(100),
             Field::make( 'text', 'ogrn', 'ОГРН' )->set_width(100),
-            Field::make( 'text', 'email', 'e-mail' )->set_width(100),
-            Field::make( 'text', 'adress', 'Адрес' )->set_width(100),
-            Field::make( 'text', 'adress_ur', 'Адрес юридический' )->set_width(100),
-            Field::make( 'text', 'worck_day', 'Дни работы' )->set_width(100),
-            Field::make( 'text', 'worck_time', 'Время работы' )->set_width(100),
-            Field::make( 'text', 'phone', 'Телефон для связи' )->set_width(100),
-            Field::make( 'text', 'email_send', 'Почта для отправки' )->set_width(100),
-            Field::make( 'text', 'tg_token', 'Токен Телеграм' )->set_width(100),
-            Field::make( 'text', 'tg_chats', 'Чат Телеграмм' )->set_width(100),
+            Field::make( 'text', 'r-sch', 'р/сч' )->set_width(100),
+            Field::make( 'text', 'k-sch', 'к/сч' )->set_width(100),
+            Field::make( 'text', 'bik', 'БИК' )->set_width(100),
+            Field::make( 'text', 'director', 'Директор' )->set_width(100),
+            Field::make( 'text', 'okved', 'ОКВЭД' )->set_width(100),
+            Field::make( 'text', 'okopf', 'ОКОПФ' )->set_width(100),
+            Field::make( 'text', 'okpo', 'ОКПО' )->set_width(100),
+            Field::make( 'text', 'email', 'Адрес эл.почты' )->set_width(100)
+           
+        ))->add_tab('Общие настройки', array(
+            Field::make( 'rich_text', 'about-us', 'О нас' )->set_width(100),
+            Field::make( 'rich_text', 'general-provisions', 'Общие положения' )->set_width(100)
         ) );
 
     Container::make( 'term_meta', __( 'Дополнительные поля для категорий', 'crb' ) )

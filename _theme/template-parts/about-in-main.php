@@ -2,10 +2,7 @@
 	<div class="_container">
 
 		<h2 class="about__title title">О НАС</h2>
-		<p class="about__subtitle">
-			ЧУ ДПО «Учебный центр «Выстрел-Курск» оказывает услуги по подготовки квалифицированных кадров для работы в
-			структурах безопасности, а также обучение граждан РФ безопасному обращению с оружием и навыков владения им.
-		</p>
 
+		<?php echo apply_filters( 'the_content', carbon_get_theme_option( 'about-us' ) ); ?>
 	</div>
 </section>
