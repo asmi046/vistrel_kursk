@@ -24,6 +24,7 @@ function my_assets()
 	wp_enqueue_style("verstka-css", get_template_directory_uri() . "/css/style.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("main-css", get_template_directory_uri() . "/css/main.css", array(), $style_version, 'all');
 	wp_enqueue_style("page-about", get_template_directory_uri() . "/css/page-about.css", array(), $style_version, 'all');  
+	wp_enqueue_style("page-text-style", get_template_directory_uri() . "/css/text-styles.css", array(), $style_version, 'all');  
 	wp_enqueue_style("main-style", get_stylesheet_uri(), array(), $style_version, 'all');
 
 	// Подключение скриптов

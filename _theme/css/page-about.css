@@ -71,3 +71,9 @@ hr {
     margin: 1.5rem 0;
     background-color: rgb(133, 101, 42);
 }
+
+.menu-list__item.active,
+.menu-list__item:hover {
+    color:#4B6E36
+    
+}
