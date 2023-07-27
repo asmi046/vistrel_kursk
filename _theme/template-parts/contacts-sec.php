@@ -10,22 +10,24 @@
 						</div>
 						<div class="contacts-sec__descp">
 							<h2 class="contacts-sec__title">Контакты</h2>
-							<a href="tel:88004563344" class="contacts-sec__tel">
+							<a href="tel:<?php echo carbon_get_theme_option( 'phone1' ); ?>" class="contacts-sec__tel">
 								<svg>
 									<use xlink:href="#phone"></use>
 								</svg>
-								8 800 456 33 44</a>
-							<a href="#callback" class="contacts-sec__callback _popup-link">Заказать звонок</a>
-							<a href="mailto:vistrel-kursk@yandex.ru" class="contacts-sec__mail">
+								<?php echo carbon_get_theme_option( 'phone1' ); ?>
+							</a>
+							
+							<a href="mailto:<?php echo carbon_get_theme_option( 'email' ); ?>" class="contacts-sec__mail">
 								<svg>
 									<use xlink:href="#mail"></use>
 								</svg>
-								vistrel-kursk@yandex.ru</a>
+								<?php echo carbon_get_theme_option( 'email' ); ?>
+							</a>
 							<div class="contacts-sec__address">
 								<svg>
 									<use xlink:href="#map"></use>
 								</svg>
-								Курск, ул. Радищева 64
+								<?php echo carbon_get_theme_option( 'adress' ); ?>
 							</div>
 						</div>
 
