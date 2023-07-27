@@ -1,5 +1,5 @@
 <section class="general-provisions section">
-				<div class="_container">
+				<div class="_container text_styles">
 
 					<h2 class="general-provisions__title title">ОБЩИЕ ПОЛОЖЕНИЯ</h2>
 
@@ -7,4 +7,4 @@
 
 
 				</div>
-			</section>
+</section>

@@ -6,7 +6,7 @@
 					<div class="services__inner">
 
 						<div class="services__column">
-							<a href="#" class="services__card">
+							<a href="<?php echo get_page_link(14); ?>" class="services__card">
 								<div class="services__card-img _ibg" type="image/webp">
 									<picture>
 										<source srcset="<?php echo get_template_directory_uri();?>/img/services/01.webp" type="image/webp">
@@ -15,15 +15,14 @@
 								</div>
 								<div class="services__card-body">
 									<h4 class="services__card-title">
-										Обучение
-										сотрудников
+										Подготовка частных охранников
 									</h4>
 								</div>
 							</a>
 						</div>
 
 						<div class="services__column">
-							<a href="#" class="services__card">
+							<a href="<?php echo get_page_link(14); ?>" class="services__card">
 								<div class="services__card-img _ibg" type="image/webp">
 									<picture>
 										<source srcset="<?php echo get_template_directory_uri();?>/img/services/02.webp" type="image/webp">
@@ -32,15 +31,14 @@
 								</div>
 								<div class="services__card-body">
 									<h4 class="services__card-title">
-										Переодическая
-										проверка
+										Повышение квалификации частных охранников
 									</h4>
 								</div>
 							</a>
 						</div>
 
 						<div class="services__column">
-							<a href="#" class="services__card">
+							<a href="<?php echo get_page_link(14); ?>" class="services__card">
 								<div class="services__card-img _ibg" type="image/webp">
 									<picture>
 										<source srcset="<?php echo get_template_directory_uri();?>/img/services/03.webp" type="image/webp">
@@ -49,15 +47,14 @@
 								</div>
 								<div class="services__card-body">
 									<h4 class="services__card-title">
-										Учебно-тренировочные
-										стрельбы
+										Подготовка юридических лиц с особыми уставными задачами
 									</h4>
 								</div>
 							</a>
 						</div>
 
 						<div class="services__column">
-							<a href="#" class="services__card">
+							<a href="<?php echo get_page_link(14); ?>" class="services__card">
 								<div class="services__card-img _ibg" type="image/webp">
 									<picture>
 										<source srcset="<?php echo get_template_directory_uri();?>/img/services/04.webp" type="image/webp">

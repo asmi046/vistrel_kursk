@@ -6,6 +6,7 @@
     margin: 10px 0;
 }
 
+.text_styles h2,
 .contacts_input_in_page h2 {
     margin-bottom: 20px;
     font-size: 24px;
@@ -19,3 +20,69 @@
     color:#4B6E36;
 }
 
+.text_styles img{
+    margin: 20px 0;
+}
+
+.text_styles .wp-block-gallery {
+    margin: 20px 0;
+}
+
+.text_styles .wp-block-file a:first-child {
+    color: black;
+    font-size: 16px;
+}
+
+.text_styles .wp-block-file__button {
+    background-color: #4B6E36;
+    color: white;
+    padding: 5px 20px;
+}
+.text_styles ol,
+.text_styles ul {
+    margin: 20px 0;
+    
+}
+
+.text_styles ol li, 
+.text_styles ul li 
+{ 
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.text_styles ol {
+    counter-reset: my-awesome-counter;
+    list-style: none;
+}
+
+.text_styles ol li {
+    counter-increment: my-awesome-counter;
+}
+
+.text_styles ol li::before {
+    content: counter(my-awesome-counter)".";
+}
+
+.text_styles ol li:before{
+
+    color:#4B6E36;
+    font-weight: bold;
+    position: absolute;
+    left:0
+}
+
+.text_styles ul li:before {
+    content:"";
+    position: absolute;
+    width:6px;
+    height:6px;
+    background-color: #4B6E36;
+    left:0;
+    top: calc(50% - 3px);
+}
+
+@media (max-width: 768px) { 
+
+}

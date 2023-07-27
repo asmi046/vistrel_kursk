@@ -865,7 +865,7 @@ input::-webkit-inner-spin-button {
   z-index: 2;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2078431373);
+  background-color: rgba(0, 0, 0, 0.4078431373);
 }
 
 .nuar_color {
@@ -2543,10 +2543,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   content: "\e903";
 }
 
-.group {
-  *zoom: 1;
-}
-
 .group:before,
 .group:after {
   display: table;
@@ -3764,8 +3760,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .main-banner {
   position: relative;
-  padding: 115px 0 294px 0;
-  min-height: 737px;
+  padding: 100px 0 100px 0;
+  background-image: url(../img/main-bg.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
   background-color: #EDEDED;
 }
 
@@ -3803,7 +3802,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .main-banner__img {
   position: absolute;
-  top: 11.5%;
+  top: 6%;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3814,18 +3813,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 980px;
-  height: 664px;
+          width: 50%;
+          height: 88%;
+
+          background-image: url(../img/main-img-round.webp);
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .main-banner__img-circle {
-  width: 783px;
-  height: 783px;
+  
   overflow: hidden;
-  border-radius: 50%;
+  
 }
 
 .about p {
@@ -3994,7 +3995,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 42px;
   letter-spacing: 0em;
@@ -4050,8 +4051,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .contacts-sec__address svg {
-  width: 11px;
-  height: 16px;
+  width: 30px;
+  height: 20px;
   margin-right: 13px;
 }
 
@@ -4128,15 +4129,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   ._container {
     padding: 0 10px;
   }
+
+  .main-banner {
+    background-size: 60%;
+  }
 }
 
 @media (max-width: 1330px) {
   .contacts-sec__box {
     padding: 54px 35px 83px 35px;
   }
+
+  .main-banner {
+    background-size: 55%;
+  }
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .main-banner .nuar_blk {
     display: block;
   }
@@ -4144,7 +4153,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .main-banner__img {
     opacity: 0.8;
   }
-}
+} */
 
 @media (max-width: 1100px) {
   .services__column {
@@ -4217,6 +4226,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 @media (max-width: 768px) {
+
+  .main-banner .nuar_blk {
+    display: block;
+    
+  }
+  .main-banner {
+    background-image: url(../img/main-img.webp);
+    background-size: cover;
+    background-position: top;
+  }
+
   h1 {
     font-size: 26px;
   }
@@ -4244,6 +4264,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     height: 30px;
   }
 
+  footer ul {
+    text-align: center;
+  } 
+
+  footer .logo-icon { 
+    margin: 10px auto;
+  }
+
   .icon-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4252,6 +4280,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .header__menu-block {
     margin-right: 15px;
+  }
+
+  .contacts-sec__address svg {
+    width: 18px;
+    height: 16px;
   }
 
   .header__menu-list {
@@ -4521,6 +4554,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 ._webp .lg-outer .lg-has-youtube:hover .lg-video-play{ background: url(../img/youtube-play.webp) no-repeat scroll 0 -60px transparent; }
 
-._webp .main-banner__img{ background-image: url(../img/main-bg.webp); }
+/* ._webp .main-banner__img{ background-image: url(../img/main-bg.webp); } */
 
 ._webp .contacts-sec__box{ background: url(../img/contacts-bg.webp) 0 0 no-repeat; }

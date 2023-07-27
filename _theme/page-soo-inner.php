@@ -18,7 +18,7 @@ get_header(); ?>
         <?php get_template_part('template-parts/soo-sidebar');?>
             
 
-                <div class="information-categoty__text">
+                <div class="information-categoty__text text_styles">
                     
                     <?php the_content();?>
                     
@@ -29,3 +29,4 @@ get_header(); ?>
     </section>
  
 <?php get_footer(); ?>
+Приложение к лицензии на осуществление образовательной деятельность
