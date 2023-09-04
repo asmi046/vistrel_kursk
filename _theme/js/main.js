@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
         axios.post(allAjax.ajaxurl, formData)
             .then(function (response) {            
                 console.log(response)
+                all_sf_name.value = ""
+                all_sf_tel2.value = ""
+
                 alert("Ваше мообщение отправлено!")
             })
             .catch(function (error) {
