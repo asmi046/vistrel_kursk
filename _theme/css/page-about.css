@@ -74,6 +74,27 @@ hr {
 
 .menu-list__item.active,
 .menu-list__item:hover {
-    color:#4B6E36
-    
+    color:#BFBD8F;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) { 
+    .information-category {
+        flex-direction: column;
+    }
+
+    .information-categoty__text {
+        padding-left: 0;
+        padding-top:20px;
+        margin-top: 20px;
+        border-top: 2px solid #4B6E36
+    }
+
+    .information-categoty__text::before {
+        display: none;
+    }
+
+    .page-banner h1 {
+        font-size: 42px;
+    }
 }

@@ -3458,6 +3458,32 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 35px 0;
 }
 
+
+
+ .phone_blk{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.mob-menu .phone_blk{
+  text-align: left;
+}
+
+.mob-menu .phone_blk .h_tel{ 
+  margin: 5px 0 ;
+}
+
+.phone_blk .h_tel{ 
+  font-size: 18px;
+  font-weight: bold;
+  color: #BFBD8F;
+}
+
+.phone_blk .h_mail{ 
+  font-size: 12px;
+}
+
 .header__row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -4287,6 +4313,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     height: 16px;
   }
 
+  .header .phone_blk,
   .header__menu-list {
     display: none;
   }

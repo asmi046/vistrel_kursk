@@ -16,16 +16,11 @@
 					'menu_class' => 'header__menu-list menu-list d-flex',
 				])?>
 				
-				<!-- <ul class="header__menu-list menu-list d-flex">
-					<li class="menu-list__item"><a href="#" class="menu-list__link">Сведения об образовательной организации</a></li>
-					<li class="menu-list__item"><a href="#" class="menu-list__link">Нормативные правовые акты</a></li>
-					<li class="menu-list__item"><a href="#" class="menu-list__link">Услуги</a></li>
-					<li class="menu-list__item"><a href="#" class="menu-list__link">Реквизиты</a></li>
-					<li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
-				</ul> -->
-
-				<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
-							'container_class' => 'menu__list','container' => false )); ?>  -->
+				<div class="phone_blk">
+					<a class="h_tel" href="tel:<?php echo carbon_get_theme_option( 'phone1' ); ?>"><?php echo carbon_get_theme_option( 'phone1' ); ?></a>
+					<a class="h_tel" href="tel:<?php echo carbon_get_theme_option( 'phone2' ); ?>"><?php echo carbon_get_theme_option( 'phone2' ); ?></a>
+					<a class="h_mail" href="mailto:<?php echo carbon_get_theme_option( 'email' ); ?>"><?php echo carbon_get_theme_option( 'email' ); ?></a>
+				</div>
 
 				<button type="button" class="header__icon-menu icon-menu" aria-label="Иконка бургера">
 					<span></span>

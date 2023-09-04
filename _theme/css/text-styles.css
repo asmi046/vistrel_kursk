@@ -6,6 +6,10 @@
     margin: 10px 0;
 }
 
+.text_styles h3{
+    margin-bottom: 20px;
+}
+
 .text_styles h2,
 .contacts_input_in_page h2 {
     margin-bottom: 20px;
