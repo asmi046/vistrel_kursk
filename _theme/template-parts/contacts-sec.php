@@ -33,9 +33,9 @@
 
 						<form action="#" class="contacts-sec__form">
 							<div class="form__line">
-								<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя" class="input _req">
-								<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон" class="input _phone _req">
-								<button class="form__btn btn">Отправить</button>
+								<input id="all_sf_name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя" class="input">
+								<input id="all_sf_tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон" class="input">
+								<button id="all_b_send" class="form__btn btn">Отправить</button>
 							</div>
 							<p class="contacts-sec__form-policy">* Отправляя заявку, вы соглашаетесь на обработку
 								<a href="#">персональных данных</a>

@@ -29,6 +29,7 @@ function my_assets()
 
 	// Подключение скриптов
 
+	wp_enqueue_script('axios-js', get_template_directory_uri() . '/js/axios.min.js', array(), $all_version, true);
 	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), $scrypt_version, true);
 	wp_enqueue_script('vendor', get_template_directory_uri() . '/js/vendors.min.js', array(), $scrypt_version, true);
 	wp_enqueue_script('app', get_template_directory_uri() . '/js/app.min.js', array(), $scrypt_version, true);
@@ -52,17 +53,52 @@ add_action( 'after_setup_theme', function(){
 } ); 
 
 // Заготовка для вызова ajax
-add_action('wp_ajax_aj_fnc', 'aj_fnc');
-add_action('wp_ajax_nopriv_aj_fnc', 'aj_fnc');
+// Универсальный отправщик
+add_action('wp_ajax_newsendr', 'newsendr');
+add_action('wp_ajax_nopriv_newsendr', 'newsendr');
 
-function aj_fnc()
+function newsendr()
 {
 	if (empty($_REQUEST['nonce'])) {
 		wp_die('0');
 	}
 
 	if (check_ajax_referer('NEHERTUTLAZIT', 'nonce', false)) {
+       
+		// wp_die("!!!!!!!!!!!-------");
+
+		$send_adr = carbon_get_theme_option('email_send');
+	
+		
+
+		$subj = "Сообщение с сайта";
+		$content = "<h2>Новое сообщение с сайта</h2>";
+		$content_tg = "<b>Новое сообщение с сайта</b>\n\r";
+
+		foreach ($_REQUEST as $key => $value)
+		{
+				$content .= $key.": <strong>".$value."</strong><br/>";
+				$content_tg .= $key.": ".$value."\n\r";	
+		}
+
+	
+		$headers = array(
+			'From: Сайт Выстрел Курск <noreply@vistrel46.ru>',
+			'content-type: text/html',
+		);
+
+		add_filter('wp_mail_content_type', function () {return "text/html";} );
+		
+		if (wp_mail($send_adr, $subj, $content, $headers))
+		{
+			wp_die(true);
+		} else {
+			wp_die("NO ОК", '', 403 );
+		}
+		
+
 	} else {
 		wp_die('НО-НО-НО!', '', 403);
 	}
 }
+
