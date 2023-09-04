@@ -10,7 +10,7 @@
     "send_r": "scp -C *.php *.png *.css vistre34_all@vistre34.beget.tech:vistrel46.ru/public_html/wp-content/themes/vistrel_kursk/",
     "send_ms": "scp -C _theme/*.css vistre34_all@vistre34.beget.tech:vistrel46.ru/public_html/wp-content/themes/vistrel_kursk/",
     "send_head": "scp -C header-booking.php vistre34_all@vistre34.beget.tech:vistrel46.ru/public_html/wp-content/themes/vistrel_kursk/",
-    "send_func": "scp -C functions.php vistre34_all@vistre34.beget.tech:vistrel46.ru/public_html/wp-content/themes/vistrel_kursk/",
+    "send_func": "scp -C _theme/functions.php vistre34_all@vistre34.beget.tech:vistrel46.ru/public_html/wp-content/themes/vistrel_kursk/",
     "send_index": "scp -C _theme/index.php vistre34_all@vistre34.beget.tech:vistrel46.ru/public_html/wp-content/themes/vistrel_kursk/",
     "send_footer": "scp -C footer.php vistre34_all@vistre34.beget.tech:vistrel46.ru/public_html/wp-content/themes/vistrel_kursk/",
     "send_one": "scp -C header-booking.php vistre34_all@vistre34.beget.tech:vistrel46.ru/public_html/wp-content/themes/vistrel_kursk/",

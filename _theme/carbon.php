@@ -30,7 +30,8 @@ function crb_attach_theme_options() {
             Field::make( 'text', 'okved', 'ОКВЭД' )->set_width(100),
             Field::make( 'text', 'okopf', 'ОКОПФ' )->set_width(100),
             Field::make( 'text', 'okpo', 'ОКПО' )->set_width(100),
-            Field::make( 'text', 'email', 'Адрес эл.почты' )->set_width(100)
+            Field::make( 'text', 'email', 'Адрес эл.почты' )->set_width(100),
+            Field::make( 'text', 'email_send', 'Адрес эл.почты для заявок' )->set_width(100)
            
         ))->add_tab('Тексты главной страницы', array(
             Field::make( 'rich_text', 'about-us', 'О нас' )->set_width(100),

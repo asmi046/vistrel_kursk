@@ -29,7 +29,7 @@ function my_assets()
 
 	// Подключение скриптов
 
-	wp_enqueue_script('axios-js', get_template_directory_uri() . '/js/axios.min.js', array(), $all_version, true);
+	wp_enqueue_script('axios-js', get_template_directory_uri() . '/js/axios.min.js', array(), $scrypt_version, true);
 	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), $scrypt_version, true);
 	wp_enqueue_script('vendor', get_template_directory_uri() . '/js/vendors.min.js', array(), $scrypt_version, true);
 	wp_enqueue_script('app', get_template_directory_uri() . '/js/app.min.js', array(), $scrypt_version, true);
