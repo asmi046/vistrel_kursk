@@ -26,7 +26,7 @@ get_header(); ?>
             <p><b>КПП:</b> <?php echo carbon_get_theme_option( 'kpp' ); ?></p>        
             <p><b>ОКТМО:</b> <?php echo carbon_get_theme_option( 'oktmo' ); ?></p>        
             <p><b>ОГРН:</b> <?php echo carbon_get_theme_option( 'ogrn' ); ?></p>  
-            <p><b>ОКВЕД:</b> <?php echo carbon_get_theme_option( 'okved' ); ?></p>        
+            <p><b>ОКВЭД:</b> <?php echo carbon_get_theme_option( 'okved' ); ?></p>        
             <p><b>ОКОПФ:</b> <?php echo carbon_get_theme_option( 'okopf' ); ?></p>        
             <p><b>ОКПО:</b> <?php echo carbon_get_theme_option( 'okpo' ); ?></p>      
           

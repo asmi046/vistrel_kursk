@@ -20,6 +20,10 @@
     margin-bottom: 30px;
 }
 
+.wp-block-file {
+    margin: 20px 0;
+}
+
 .text_styles a{
     color:#4B6E36;
 }
