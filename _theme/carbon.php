@@ -34,6 +34,8 @@ function crb_attach_theme_options() {
             Field::make( 'text', 'email_send', 'Адрес эл.почты для заявок' )->set_width(100)
            
         ))->add_tab('Тексты главной страницы', array(
+            Field::make( 'text', 'main_zag', 'Заголовок' )->set_width(100),
+            Field::make( 'text', 'main_sub_zag', 'Подзаголовок' )->set_width(100),
             Field::make( 'rich_text', 'about-us', 'О нас' )->set_width(100),
             Field::make( 'rich_text', 'general-provisions', 'Общие положения' )->set_width(100)
         ) );

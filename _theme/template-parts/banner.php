@@ -4,13 +4,10 @@
 
 					<div class="main-banner__descp">
 						<h2 class="main-banner__title">
-							ОБРАЗОВАТЕЛЬНЫЙ <br>
-							ЦЕНТР <br>
-							ВЫСТРЕЛ КУРСК
+							<?php echo carbon_get_theme_option( 'main_zag' ); ?>
 						</h2>
 						<p class="main-banner__subtitle">
-							Подготовка сотрудников ЧОП <br>
-							и охранных организаций
+							<?php echo carbon_get_theme_option( 'main_sub_zag' ); ?>
 						</p>
 					</div>
 

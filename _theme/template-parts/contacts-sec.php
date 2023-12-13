@@ -38,7 +38,7 @@
 								<button id="all_b_send" class="form__btn btn">Отправить</button>
 							</div>
 							<p class="contacts-sec__form-policy">* Отправляя заявку, вы соглашаетесь на обработку
-								<a href="#">персональных данных</a>
+								<a href="<?echo get_permalink(3)?>">персональных данных</a>
 							</p>
 						</form>
 
