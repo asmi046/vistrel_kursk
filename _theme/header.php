@@ -15,7 +15,7 @@
 
     <?php wp_head();?>
 </head>
-    <body>
+    <body id="c_panel_special">
     	<div class="wrapper">
 			<?php get_template_part('template-parts/menu-head');?>
 			<?php get_template_part('template-parts/mobile-menu');?>

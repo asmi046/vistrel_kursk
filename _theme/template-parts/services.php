@@ -6,7 +6,7 @@
 					<div class="services__inner">
 
 						<div class="services__column">
-							<a href="<?php echo get_page_link(14); ?>" class="services__card">
+							<a href="<?php echo get_page_link(325); ?>" class="services__card">
 								<div class="services__card-img _ibg" type="image/webp">
 									<picture>
 										<source srcset="<?php echo get_template_directory_uri();?>/img/services/01.webp" type="image/webp">
@@ -22,7 +22,7 @@
 						</div>
 
 						<div class="services__column">
-							<a href="<?php echo get_page_link(14); ?>" class="services__card">
+							<a href="<?php echo get_page_link(327); ?>" class="services__card">
 								<div class="services__card-img _ibg" type="image/webp">
 									<picture>
 										<source srcset="<?php echo get_template_directory_uri();?>/img/services/02.webp" type="image/webp">
@@ -38,7 +38,7 @@
 						</div>
 
 						<div class="services__column">
-							<a href="<?php echo get_page_link(14); ?>" class="services__card">
+							<a href="<?php echo get_page_link(329); ?>" class="services__card">
 								<div class="services__card-img _ibg" type="image/webp">
 									<picture>
 										<source srcset="<?php echo get_template_directory_uri();?>/img/services/03.webp" type="image/webp">
@@ -54,7 +54,7 @@
 						</div>
 
 						<div class="services__column">
-							<a href="<?php echo get_page_link(14); ?>" class="services__card">
+							<a href="<?php echo get_page_link(331); ?>" class="services__card">
 								<div class="services__card-img _ibg" type="image/webp">
 									<picture>
 										<source srcset="<?php echo get_template_directory_uri();?>/img/services/04.webp" type="image/webp">

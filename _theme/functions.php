@@ -29,6 +29,8 @@ function my_assets()
 
 	// Подключение скриптов
 
+	wp_enqueue_script('jquery', "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js", array(), $scrypt_version, true);
+	
 	wp_enqueue_script('axios-js', get_template_directory_uri() . '/js/axios.min.js', array(), $scrypt_version, true);
 	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), $scrypt_version, true);
 	wp_enqueue_script('vendor', get_template_directory_uri() . '/js/vendors.min.js', array(), $scrypt_version, true);
