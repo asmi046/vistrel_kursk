@@ -14,7 +14,7 @@ add_action('wp_enqueue_scripts', 'my_assets');
 function my_assets()
 {
 
-	// Подключение стилей 
+	// Подключение стилей paся
 
 	$style_version = "1.0.1";
 	$scrypt_version = "1.0.1";

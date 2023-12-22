@@ -8,14 +8,14 @@
 						<div class="services__column">
 							<a href="<?php echo get_page_link(325); ?>" class="services__card">
 								<div class="services__card-img _ibg" type="image/webp">
-									<picture>
+				з					<picture>
 										<source srcset="<?php echo get_template_directory_uri();?>/img/services/01.webp" type="image/webp">
 										<img src="<?php echo get_template_directory_uri();?>/img/services/01.jpg" alt="Картинка карточки">
 									</picture>
 								</div>
 								<div class="services__card-body">
 									<h4 class="services__card-title">
-										Подготовка частных охранников
+										<? echo get_the_title(325); ?>
 									</h4>
 								</div>
 							</a>
@@ -31,7 +31,7 @@
 								</div>
 								<div class="services__card-body">
 									<h4 class="services__card-title">
-										Повышение квалификации частных охранников
+										<? echo get_the_title(327); ?>
 									</h4>
 								</div>
 							</a>
@@ -47,7 +47,7 @@
 								</div>
 								<div class="services__card-body">
 									<h4 class="services__card-title">
-										Подготовка юридических лиц с особыми уставными задачами
+										<? echo get_the_title(329); ?>
 									</h4>
 								</div>
 							</a>
@@ -63,8 +63,7 @@
 								</div>
 								<div class="services__card-body">
 									<h4 class="services__card-title">
-										Проверка у граждан
-										правил безопасного обращения с оружием
+										<? echo get_the_title(331); ?>
 									</h4>
 								</div>
 							</a>
